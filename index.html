@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+        margin:0;
+        padding:0;
+        list-style: none;
+        box-sizing: border-box;
+
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background-image: url('img/bjt.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .table{
+        width:700px;
+        height:650px;
+        /* background: #F2F2F2;
+          background-image: url('img/bjt.jpg');
+          background-size: cover;
+          background-position: center; */  
+        /* border:1px solid red; */
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    .pai{
+        width:90px;
+        height:130px;
+        border-radius: 5px;
+        background: #ffffff;
+        border:1px solid #ffffff;
+        box-sizing: border-box;
+        position: absolute;
+        top:0px;
+        left:100px;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+    }
+    .active{
+        /* background: blue; */
+    }
+    button{
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        background: #ffffff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+        color: blue;
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 500px;
+        left: 300px;
+        cursor: pointer;
+        opacity: 0;
+    }
+    button:nth-child(2){
+        top: 560px;
+    }
+    button:hover{
+        background: blue;
+        color: #ffffff;
+    }
+    /* .victory{
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        z-index: 10;
+        font-size: 90px;
+        color: red;
+        text-align: center;
+        line-height: 500px;
+        opacity: 0;
+    } */
+</style>
+<body>
+	<div class="table">
+       <button>&gt;</button>
+       <button>&lt;</button> 
+       <!-- <div class="victory">
+           Victory
+       </div> -->
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/puke.js"></script>
